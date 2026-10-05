@@ -98,7 +98,7 @@ def get_user_by_verifingTokens(token:str=Depends(extrating_token)):
 # oor usme exp time username ye sab hota hain
 
 
-        username=decoded_token.get("sub")   # yaha pa sunb sa uername nikal rahe login main "sub" main username beja thaa 
+        username=decoded_token.get("sub")   # yaha pa sub sa uername nikal rahe login main "sub" main username beja thaa 
         if not username:
             raise HTTPException(status_code=401,detail="Token valid hai par usme username nahi mila.")
 
